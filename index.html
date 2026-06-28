@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tariq Ayman Alslman — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <canvas id="starsCanvas"></canvas>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon"><img src="photo.png" alt="Tariq" class="logo-photo"></span>
+        Tariq Ayman
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#skills" onclick="closeMenu()">Skills</a>
+        <a href="#experience" onclick="closeMenu()">Experience</a>
+        <a href="#education" onclick="closeMenu()">Education</a>
+        <a href="#achievements" onclick="closeMenu()">Achievements</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-badge"><i class="fa-solid fa-circle-check"></i> Open to Work</div>
+      <h1>Tariq Ayman Alslman</h1>
+      <p class="hero-sub">Computer Science Graduate · IT &amp; Technology Professional</p>
+      <p class="hero-desc">Adaptable, motivated, and team-oriented — ready to learn, solve problems, and contribute in any company or industry.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+        <a href="#skills" class="btn btn-outline"><i class="fa-solid fa-layer-group"></i> View Skills</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section section-light">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag"><i class="fa-solid fa-user"></i> About</span>
+        <h2>Who I Am</h2>
+      </div>
+      <div class="about-card">
+        <div class="about-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <p>
+          Bachelor's degree graduate in Computer Science with academic knowledge of
+          programming using C++, Java, JavaScript, Python, ASP.NET Core MVC, HTML, and SQL.
+          Experienced in software and mobile application development through projects and
+          practical work. Possess good problem-solving skills, a basic understanding of UI/UX
+          principles, and familiarity with information analysis and Business Intelligence concepts.
+          Seeking an opportunity to grow professionally and contribute within a collaborative
+          technology team.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-gray">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag"><i class="fa-solid fa-star"></i> Skills</span>
+        <h2>What I Bring to the Table</h2>
+        <p class="section-desc">Core strengths and professional capabilities</p>
+      </div>
+      <div class="store-grid">
+        <div class="store-card">
+          <div class="icon-box bg-blue"><i class="fa-solid fa-file-excel"></i></div>
+          <h3>Microsoft Office</h3>
+          <p>Documents, spreadsheets &amp; presentations</p>
+        </div>
+        <div class="store-card">
+          <div class="icon-box bg-purple"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Problem Solving</h3>
+          <p>Analytical thinking &amp; creative solutions</p>
+        </div>
+        <div class="store-card">
+          <div class="icon-box bg-green"><i class="fa-solid fa-people-group"></i></div>
+          <h3>Team Work</h3>
+          <p>Collaboration in cross-functional teams</p>
+        </div>
+        <div class="store-card">
+          <div class="icon-box bg-orange"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <h3>Troubleshooting</h3>
+          <p>Diagnosing &amp; fixing technical issues</p>
+        </div>
+        <div class="store-card">
+          <div class="icon-box bg-red"><i class="fa-solid fa-gauge-high"></i></div>
+          <h3>Work Under Pressure</h3>
+          <p>Delivering results in tight deadlines</p>
+        </div>
+        <div class="store-card">
+          <div class="icon-box bg-teal"><i class="fa-solid fa-diagram-project"></i></div>
+          <h3>Team Coordination</h3>
+          <p>Organizing tasks &amp; team workflows</p>
+        </div>
+        <div class="store-card">
+          <div class="icon-box bg-indigo"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Quick Learning</h3>
+          <p>Adapting fast to new technologies</p>
+        </div>
+        <div class="store-card">
+          <div class="icon-box bg-pink"><i class="fa-solid fa-clock"></i></div>
+          <h3>Punctuality &amp; Commitment</h3>
+          <p>Reliable, dedicated &amp; on time</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag"><i class="fa-solid fa-language"></i> Languages &amp; Courses</span>
+        <h2>Knowledge &amp; Training</h2>
+      </div>
+      <div class="two-col">
+        <div class="info-panel">
+          <h3><i class="fa-solid fa-globe"></i> Languages</h3>
+          <div class="lang-cards">
+            <div class="mini-card">
+              <div class="icon-box sm bg-blue"><i class="fa-solid fa-flag"></i></div>
+              <div>
+                <strong>Arabic</strong>
+                <span>Native</span>
+              </div>
+            </div>
+            <div class="mini-card">
+              <div class="icon-box sm bg-green"><i class="fa-solid fa-flag-usa"></i></div>
+              <div>
+                <strong>English</strong>
+                <span>Fluent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-panel">
+          <h3><i class="fa-solid fa-book-open"></i> Courses</h3>
+          <ul class="course-cards">
+            <li><span class="course-icon bg-purple"><i class="fa-solid fa-check"></i></span> Quality Assurance</li>
+            <li><span class="course-icon bg-blue"><i class="fa-brands fa-js"></i></span> JavaScript &amp; React</li>
+            <li><span class="course-icon bg-pink"><i class="fa-solid fa-palette"></i></span> Basics UX/UI Design</li>
+            <li><span class="course-icon bg-teal"><i class="fa-solid fa-cloud"></i></span> Introduction to Microsoft Azure Cloud Services</li>
+            <li><span class="course-icon bg-orange"><i class="fa-solid fa-server"></i></span> Microsoft Azure Services and Lifecycles</li>
+            <li><span class="course-icon bg-red"><i class="fa-solid fa-shield-halved"></i></span> Microsoft Azure Management Tools and Security Solutions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-head center light">
+        <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Experience</span>
+        <h2>Work History</h2>
+      </div>
+      <div class="timeline">
+
+        <article class="exp-card">
+          <div class="exp-icon bg-blue"><i class="fa-solid fa-plug"></i></div>
+          <div class="exp-body">
+            <div class="exp-top">
+              <div>
+                <h3>System Integration Officer</h3>
+                <p class="company"><i class="fa-solid fa-building"></i> Electric Health Solution · Amman, Jordan</p>
+              </div>
+              <span class="badge">Apr 2025 – Apr 2026</span>
+            </div>
+            <ul>
+              <li>Responsible for system integration and resolving communication and data exchange issues between multiple platforms.</li>
+              <li>Act as a technical bridge between systems, translating data and ensuring seamless interaction across different technologies and formats.</li>
+              <li>Worked on <strong>Aumet</strong>, an electronic pharmacy platform enabling fully digital medication ordering and delivery.</li>
+              <li>Contributed to the <strong>Paxera</strong> project sharing hospital radiology images with the Hakeem outpatient system.</li>
+              <li>Skilled in monitoring data flows, analyzing logs, identifying integration gaps, and supporting end-to-end system connectivity.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-card">
+          <div class="exp-icon bg-purple"><i class="fa-solid fa-robot"></i></div>
+          <div class="exp-body">
+            <div class="exp-top">
+              <div>
+                <h3>RPA Training – 3 Months</h3>
+                <p class="company"><i class="fa-solid fa-building"></i> Cyborg Automation Hub · Amman, Jordan</p>
+              </div>
+              <span class="badge">Oct 2024 – Dec 2024</span>
+            </div>
+            <ul>
+              <li>Trained on Robotic Process Automation (RPA) concepts for automating repetitive and data-driven business tasks.</li>
+              <li>Learned how to build and test basic automation workflows to improve efficiency and reduce manual effort.</li>
+              <li>Worked with structured data, ensuring accuracy and validating inputs and outputs during automation processes.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section section-light">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag"><i class="fa-solid fa-school"></i> Education</span>
+        <h2>Academic Background</h2>
+      </div>
+      <div class="edu-card">
+        <div class="icon-box bg-indigo"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>
+          <h3>Bachelor's Degree in Computer Science</h3>
+          <p class="company">Applied Science University · Amman</p>
+          <span class="badge light">Jun 2021 – Sep 2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="section section-gray">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag"><i class="fa-solid fa-trophy"></i> Achievements</span>
+        <h2>Awards &amp; Leadership</h2>
+      </div>
+      <div class="store-grid three-col">
+        <div class="store-card">
+          <div class="icon-box bg-gold"><i class="fa-solid fa-medal"></i></div>
+          <h3>Hult Prize 2022</h3>
+          <p>Third place at university level with <strong>SRT3</strong>. Qualified for regional finals in Tunisia.</p>
+          <span class="card-date">2022</span>
+        </div>
+        <div class="store-card">
+          <div class="icon-box bg-green"><i class="fa-solid fa-handshake"></i></div>
+          <h3>Injaz Recognition</h3>
+          <p>Recognized for entrepreneurship. Invited to the inaugural Arab Summit for Entrepreneurship in Jordan.</p>
+          <span class="card-date">Apr 2022</span>
+        </div>
+        <div class="store-card">
+          <div class="icon-box bg-gold"><i class="fa-solid fa-medal"></i></div>
+          <h3>Hult Prize 2023</h3>
+          <p>Third place focusing on sustainable solutions for damaged clothing and eco-friendly recycling.</p>
+          <span class="card-date">2023</span>
+        </div>
+        <div class="store-card">
+          <div class="icon-box bg-blue"><i class="fa-solid fa-calendar-check"></i></div>
+          <h3>Student Organizer</h3>
+          <p>Coordinated student participation in university events across different universities and schools.</p>
+          <span class="card-date">2023</span>
+        </div>
+        <div class="store-card">
+          <div class="icon-box bg-purple"><i class="fa-solid fa-crown"></i></div>
+          <h3>Leadership Roles</h3>
+          <p>President of Hult Prize, Head of Consultation, Organizer for Translator Competition.</p>
+          <span class="card-date">2023</span>
+        </div>
+        <div class="store-card">
+          <div class="icon-box bg-orange"><i class="fa-solid fa-award"></i></div>
+          <h3>Graduation Project Contest</h3>
+          <p>Project ranked fourth among graduation projects at university level.</p>
+          <span class="card-date">2023 – 2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag"><i class="fa-solid fa-certificate"></i> Projects</span>
+        <h2>Certificates &amp; Projects</h2>
+      </div>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-banner bg-teal"><i class="fa-solid fa-certificate"></i></div>
+          <div class="project-body">
+            <h3>Professional Development for Tech Roles</h3>
+            <p>Honors from USAID</p>
+          </div>
+        </div>
+        <div class="project-card wide">
+          <div class="project-banner bg-indigo"><i class="fa-solid fa-mobile-screen"></i></div>
+          <div class="project-body">
+            <h3>Tashshani Application — Graduation Project</h3>
+            <p class="project-meta"><i class="fa-brands fa-flutter"></i> Flutter · Front-end Developer · 4-member team</p>
+            <p>A platform where users discover activities and venues tailored to financial preferences. Features include exploring locations, bookings, reservations, and cancellations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <div class="section-head center light">
+        <span class="section-tag"><i class="fa-solid fa-address-book"></i> Contact</span>
+        <h2>Get In Touch</h2>
+        <p class="section-desc light">Let's connect and explore opportunities together</p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:tariq.ayman12@gmail.com" class="contact-card">
+          <div class="icon-box bg-blue"><i class="fa-solid fa-envelope"></i></div>
+          <h3>Email</h3>
+          <p>tariq.ayman12@gmail.com</p>
+        </a>
+        <a href="tel:+962798339498" class="contact-card">
+          <div class="icon-box bg-green"><i class="fa-solid fa-phone"></i></div>
+          <h3>Phone</h3>
+          <p>+962 79 833 9498</p>
+        </a>
+        <div class="contact-card">
+          <div class="icon-box bg-orange"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Location</h3>
+          <p>Amman, Jordan</p>
+        </div>
+        <a href="https://linkedin.com/in/tariq-ayman-a5470b271" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="icon-box bg-indigo"><i class="fa-brands fa-linkedin-in"></i></div>
+          <h3>LinkedIn</h3>
+          <p>tariq-ayman</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Tariq Ayman Alslman. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scroll.js"></script>
+  <script>
+    // Shooting Stars Animation
+    const canvas = document.getElementById('starsCanvas');
+    const ctx = canvas.getContext('2d');
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    // Detect if a Y position (absolute page Y) is over a dark section
+    const darkSections = [];
+    function buildDarkSections() {
+      darkSections.length = 0;
+      document.querySelectorAll('.hero, .section-dark, .section-contact').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        darkSections.push({
+          top: rect.top + window.scrollY,
+          bottom: rect.bottom + window.scrollY
+        });
+      });
+    }
+    buildDarkSections();
+    window.addEventListener('resize', buildDarkSections);
+    window.addEventListener('scroll', buildDarkSections);
+
+    function isDark(pageY) {
+      return darkSections.some(s => pageY >= s.top && pageY <= s.bottom);
+    }
+
+    // Purple colors for light sections
+    const PURPLE = [
+      { r: 192, g: 132, b: 252 },
+      { r: 168, g: 85,  b: 247 },
+      { r: 216, g: 180, b: 254 },
+      { r: 196, g: 112, b: 255 },
+    ];
+    // White/silver for dark sections
+    const WHITE = [
+      { r: 255, g: 255, b: 255 },
+      { r: 220, g: 220, b: 255 },
+      { r: 200, g: 200, b: 255 },
+    ];
+
+    function pickColor(screenY) {
+      const pageY = screenY + window.scrollY;
+      const palette = isDark(pageY) ? WHITE : PURPLE;
+      return palette[Math.floor(Math.random() * palette.length)];
+    }
+
+    class ShootingStar {
+      constructor() { this.reset(true); }
+      reset(initial = false) {
+        this.x = Math.random() * canvas.width * 1.2;
+        this.screenY = initial ? Math.random() * canvas.height : -20;
+        this.speed = Math.random() * 5 + 3;
+        this.angle = Math.PI / 4 + (Math.random() - 0.5) * 0.4;
+        this.opacity = 0;
+        this.fadeIn = true;
+        this.trail = [];
+        this.maxTrail = 22;
+        this.delay = initial ? Math.random() * 60 : Math.random() * 120 + 20;
+        this.timer = 0;
+        const c = pickColor(this.screenY);
+        this.r = c.r; this.g = c.g; this.b = c.b;
+        this.width = Math.random() * 1.5 + 1.2;
+      }
+      update() {
+        this.timer++;
+        if (this.timer < this.delay) return;
+        this.trail.push({ x: this.x, y: this.screenY });
+        if (this.trail.length > this.maxTrail) this.trail.shift();
+        this.x += Math.cos(this.angle) * this.speed;
+        this.screenY += Math.sin(this.angle) * this.speed;
+        // Update color dynamically based on current position
+        const c = isDark(this.screenY + window.scrollY) ? WHITE[0] : PURPLE[0];
+        this.r += (c.r - this.r) * 0.05;
+        this.g += (c.g - this.g) * 0.05;
+        this.b += (c.b - this.b) * 0.05;
+        if (this.fadeIn && this.opacity < 1) this.opacity += 0.07;
+        else { this.fadeIn = false; this.opacity -= 0.022; }
+        if (this.opacity <= 0 || this.x > canvas.width + 100 || this.screenY > canvas.height + 100) {
+          this.reset();
+        }
+      }
+      draw() {
+        if (this.timer < this.delay || this.trail.length < 2) return;
+        const r = Math.round(this.r), g = Math.round(this.g), b = Math.round(this.b);
+        for (let i = 1; i < this.trail.length; i++) {
+          const t = i / this.trail.length;
+          const grad = ctx.createLinearGradient(
+            this.trail[i-1].x, this.trail[i-1].y,
+            this.trail[i].x,   this.trail[i].y
+          );
+          grad.addColorStop(0, `rgba(${r},${g},${b},0)`);
+          grad.addColorStop(1, `rgba(${r},${g},${b},${this.opacity * t * 0.85})`);
+          ctx.beginPath();
+          ctx.moveTo(this.trail[i-1].x, this.trail[i-1].y);
+          ctx.lineTo(this.trail[i].x,   this.trail[i].y);
+          ctx.strokeStyle = grad;
+          ctx.lineWidth = t * this.width;
+          ctx.lineCap = 'round';
+          ctx.stroke();
+        }
+        const last = this.trail[this.trail.length - 1];
+        const glow = ctx.createRadialGradient(last.x, last.y, 0, last.x, last.y, 8);
+        glow.addColorStop(0,   `rgba(${r},${g},${b},${this.opacity})`);
+        glow.addColorStop(0.4, `rgba(${r},${g},${b},${this.opacity * 0.4})`);
+        glow.addColorStop(1,   `rgba(${r},${g},${b},0)`);
+        ctx.fillStyle = glow;
+        ctx.beginPath();
+        ctx.arc(last.x, last.y, 8, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(last.x, last.y, 1.5, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255,255,255,${this.opacity * 0.9})`;
+        ctx.fill();
+      }
+    }
+
+    const shootingStars = Array.from({ length: 7 }, () => new ShootingStar());
+
+    // Glowing stars — only on dark sections
+    class GlowingStar {
+      constructor() { this.init(); }
+      init() {
+        // Place randomly across full page height
+        this.x = Math.random() * window.innerWidth;
+        this.pageY = Math.random() * document.body.scrollHeight;
+        this.baseR = Math.random() * 1.5 + 0.5;
+        this.maxGlow = Math.random() * 10 + 6;
+        this.speed = Math.random() * 0.015 + 0.005;
+        this.phase = Math.random() * Math.PI * 2;
+        this.color = Math.random() > 0.5
+          ? { r: 255, g: 255, b: 255 }
+          : { r: 180, g: 160, b: 255 };
+      }
+      draw(scrollY) {
+        const screenY = this.pageY - scrollY;
+        // Only draw if visible on screen
+        if (screenY < -50 || screenY > canvas.height + 50) return;
+        // Only draw on dark sections
+        if (!isDark(this.pageY)) return;
+
+        const pulse = (Math.sin(frame * this.speed + this.phase) + 1) / 2; // 0 to 1
+        const glowR = this.baseR + pulse * this.maxGlow;
+        const opacity = 0.15 + pulse * 0.85;
+        const { r, g, b } = this.color;
+
+        // Outer glow
+        const glow = ctx.createRadialGradient(this.x, screenY, 0, this.x, screenY, glowR);
+        glow.addColorStop(0,   `rgba(${r},${g},${b},${opacity})`);
+        glow.addColorStop(0.3, `rgba(${r},${g},${b},${opacity * 0.4})`);
+        glow.addColorStop(1,   `rgba(${r},${g},${b},0)`);
+        ctx.fillStyle = glow;
+        ctx.beginPath();
+        ctx.arc(this.x, screenY, glowR, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Bright core
+        ctx.beginPath();
+        ctx.arc(this.x, screenY, this.baseR, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${r},${g},${b},${opacity})`;
+        ctx.fill();
+      }
+    }
+
+    const glowingStars = Array.from({ length: 120 }, () => new GlowingStar());
+
+    let frame = 0;
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      frame++;
+
+      const scrollY = window.scrollY;
+      glowingStars.forEach(s => s.draw(scrollY));
+      shootingStars.forEach(s => { s.update(); s.draw(); });
+      requestAnimationFrame(animate);
+    }
+    animate();
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      const btn = document.getElementById('hamburger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('active');
+    }
+    function closeMenu() {
+      document.getElementById('nav-links').classList.remove('open');
+      document.getElementById('hamburger').classList.remove('active');
+    }
+  </script>
+</body>
+</html>
